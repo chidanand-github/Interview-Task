@@ -15,10 +15,11 @@ public class GitHubApplication {
 	public static void main(String[] args) {
 		
 		SpringApplication.run(GitHubApplication.class, args);
-		System.out.println("chidanand kadapure");
+	
 		String repoUrl = "https://github.com/chidanand-github/sampleRepo.git";
 		String cloneDirectoryPath = "git/chiduRepo/code"; // Ex.in windows c:\\gitProjects\SpringBootMongoDbCRUD\
 		try {
+			System.out.println("inside try");
 		    System.out.println("Cloning "+repoUrl+" into "+repoUrl);
 		    Git.cloneRepository()
 		        .setURI(repoUrl)
